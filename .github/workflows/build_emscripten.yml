@@ -2,14 +2,14 @@ name: Emscripten
 
 on:
   push:
-      branches: 
-        - "*"
-      tags:
-        - "*"
+    branches: 
+      - "*"
+    tags:
+      - "*"
     
   pull_request:
-      branches: 
-        - "*"
+    branches: 
+      - "*"
 
 jobs:
   build:
@@ -65,5 +65,5 @@ jobs:
       - name: Upload Artifact
         uses: actions/upload-artifact@v4
         with:
-            name: projectm-emscripten-static-latest
-            path: install/*
+          name: projectm-emscripten-static-latest
+          path: install/*
